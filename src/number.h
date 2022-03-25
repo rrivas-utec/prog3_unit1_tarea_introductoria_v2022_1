@@ -25,8 +25,8 @@ public:
     void set(number_t* number) override
     {  value = int(number); }
     explicit operator int() const override { return value; }
-    explicit operator double () const override  { return value; }
-    friend std::ostream& operator << (std::ostream& os, const number_t* number);
+    explicit operator double() const override  { return value; }
+    friend std::ostream& operator << (std::ostream& os, number_t* number);
 };
 
 class real_t: public number_t {
@@ -45,9 +45,9 @@ public:
         return static_cast<int>(value);
     }
     explicit operator double () const override { return value; }
-    friend std::ostream& operator << (std::ostream& os, const number_t* number);
+    friend std::ostream& operator << (std::ostream& os, number_t* number);
 };
 
-std::ostream& operator << (std::ostream& os, const number_t* number);
+std::ostream& operator << (std::ostream& os, number_t* number);
 
 #endif //PROG3_UNIT1_TAREA_INTRODUCTORIA_V2022_1_NUMBER_H
