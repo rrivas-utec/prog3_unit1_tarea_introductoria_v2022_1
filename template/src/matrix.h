@@ -6,7 +6,7 @@
 #define PROG3_UNIT1_TAREA_INTRODUCTORIA_V2022_1_MATRIX_H
 
 
-class matrix {
+class matrix_t {
 
 };
 

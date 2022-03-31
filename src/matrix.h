@@ -5,9 +5,10 @@
 #ifndef PROG3_UNIT1_TAREA_INTRODUCTORIA_V2022_1_MATRIX_H
 #define PROG3_UNIT1_TAREA_INTRODUCTORIA_V2022_1_MATRIX_H
 
+#include "number.h"
 #include <iostream>
 
-using TYPE = int;
+using TYPE = number_t*;
 using SIZE_TYPE = unsigned int;
 
 namespace utec {

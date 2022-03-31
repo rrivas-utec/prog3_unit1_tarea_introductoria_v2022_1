@@ -6,7 +6,8 @@
 # src code references
 source='cppcheck.cpp
   ../redirect_io.h 
-  ../PC1.h ../PC1.cpp
+  ../matrix.h ../matrix.cpp
+  ../number.h ../number.cpp
   '
 
 cppcheck ${source} -x c++ --enable=all --verbose --error-exitcode=1 --suppressions-list=suppressions.txt

@@ -34,7 +34,7 @@ class real_t: public number_t {
 public:
     real_t() = default;
     real_t(double value): value{value} {}
-    [[nodiscard]] real_t* get_value() const override {
+    [[nodiscard]] number_t* get_value() const override {
         return new real_t(value);
     }
 

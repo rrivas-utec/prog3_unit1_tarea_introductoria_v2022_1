@@ -1,4 +1,6 @@
 limit_submissions: -1
-required_files: 
-  - PC1.cpp
-  - PC1.h
+required_files:
+  - matrix.cpp
+  - matrix.h
+  - number.cpp
+  - number.h

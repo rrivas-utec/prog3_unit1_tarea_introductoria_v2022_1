@@ -10,15 +10,3 @@ using namespace std;
 void question_1_1(){
 
 }
-
-void question_1_2(){
-
-}
-
-void question_1_3(){
-
-}
-
-void question_1_4(){
-
-}
