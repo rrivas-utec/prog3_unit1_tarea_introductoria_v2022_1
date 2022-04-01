@@ -5,6 +5,7 @@
 #include "matrix.h"
 #include <stdexcept>
 #include <format>
+#include <iomanip>
 
 void utec::matrix::create_matrix(TYPE**& matrix, SIZE_TYPE nr, SIZE_TYPE nc) const {
     matrix = new TYPE*[n_rows]{};
@@ -41,7 +42,7 @@ TYPE utec::matrix::operator()(SIZE_TYPE row, SIZE_TYPE col) const {
 std::ostream& utec::operator<<(std::ostream &os, const utec::matrix &m) {
     for (int i = 0; i < m.n_rows; ++i) {
         for (int j = 0; j < m.n_cols; ++j) {
-            os << m(i, j);
+            os << std::setw(4) << m(i, j);
         }
         os << std::endl;
     }
