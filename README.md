@@ -101,5 +101,5 @@ Use Case #3:
     cout << m1 << endl;
     // Multiplicación escalar
     auto m5 = 4 * m1 * 2 + m4;
-    cout << m1 << endl;
+    cout << m5 << endl;
 ```
