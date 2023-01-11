@@ -5,6 +5,10 @@
 #ifndef _PC1_H
 #define _PC1_H
 
+
 void question_1_1();
+void question_1_2();
+void question_1_3();
+void question_1_4();
 
 #endif //_PC1_H

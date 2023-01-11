@@ -8,7 +8,7 @@
 # src code references
 source_code='
   ../matrix.cpp
-  test_1_1.cpp
+  test_1_3.cpp
   '
 
 # compilation command

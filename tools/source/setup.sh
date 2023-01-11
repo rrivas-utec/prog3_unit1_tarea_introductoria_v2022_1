@@ -8,6 +8,7 @@ apt-get update
 apt-get install -y \
     build-essential \
     manpages-dev \
+    apt-utils \
     software-properties-common \
     libtbb-dev \
     gcc-9 \

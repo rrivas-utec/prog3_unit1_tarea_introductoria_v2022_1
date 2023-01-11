@@ -2,7 +2,7 @@
 
 project_name=prog3_unit1_tarea_introductoria_v2022_1
 source_code='
-        PC1.h PC1.cpp
+        matrix.h matrix.cpp
   '
 
 # Create autograder zip file

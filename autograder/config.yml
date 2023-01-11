@@ -2,5 +2,3 @@ limit_submissions: -1
 required_files:
   - matrix.cpp
   - matrix.h
-  - number.cpp
-  - number.h
