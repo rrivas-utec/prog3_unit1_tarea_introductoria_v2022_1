@@ -1,4 +1,4 @@
-# Task #1: Tarea Introductoria - Matriz  
+# Task #1: Tarea Introductoria - Matriz
 **course:** Programación III  
 **unit:** 1  
 **cmake project:** prog3_unit1_tarea_introductoria_v2023_0
@@ -8,13 +8,13 @@ Subir a gradescope los siguientes archivos:
 - **`matrix.h` y `matrix.cpp`**, contienen la declaración (.h) y definición (.cpp) de la clase **`matrix`**
 
 ## Question #1 - Matriz (20 points)
-  
-Desarrollar una matriz que permita realizar las siguientes operaciones: 
 
-### **NOTA:** No utilizar vectores para su implementación.
+Desarrollar una matriz que permita realizar las siguientes operaciones:
+
+#### **NOTA:** <u>No utilizar vectores</u> para su implementación, solo usar memoria dinámica y punteros.
 
 - **Construcción, Ingreso e impresión de valores**  
-Use Case #1:  
+  Use Case #1:
 ```cpp
     // Constructor por parametros
     utec::matrix m1(4, 5);
@@ -30,7 +30,7 @@ Use Case #1:
     
 ```
 - **Construcción copia y move**  
-Use Case #2:
+  Use Case #2:
 ```cpp
     random_device rd;
     utec::matrix m1(8, 9);
@@ -54,7 +54,7 @@ Use Case #2:
     cout << m1 << endl << m2 << endl << m3 <<endl;
 ```
 - **Comparar matrices**  
-Use Case #3:
+  Use Case #3:
 ```cpp
     random_device rd;
     utec::matrix m1(8, 9);
@@ -74,8 +74,8 @@ Use Case #3:
     cout << boolalpha << (m2 != m3) << endl;
 ```
 
-- **Operaciones entre matrices**
-- Use Case #4:
+- **Operaciones entre matrices**  
+  Use Case #4:
 ```cpp
     SIZE_TYPE rows = 0, cols = 0;
     cin >> rows >> cols;
