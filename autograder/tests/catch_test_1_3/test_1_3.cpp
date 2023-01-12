@@ -5,6 +5,7 @@
 #include "redirect_io.h"
 #include "matrix.h"
 #include <iostream>
+#include <random>
 using namespace std;
 
 static void question_1_3() {

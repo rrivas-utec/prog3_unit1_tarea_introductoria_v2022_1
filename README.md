@@ -11,6 +11,8 @@ Subir a gradescope los siguientes archivos:
   
 Desarrollar una matriz que permita realizar las siguientes operaciones: 
 
+### **NOTA:** No utilizar vectores para su implementación.
+
 - **Construcción, Ingreso e impresión de valores**  
 Use Case #1:  
 ```cpp

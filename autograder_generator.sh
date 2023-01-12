@@ -9,7 +9,12 @@ source_code='
 rm -f ../autograder.zip
 
 cd autograder/tests || return
-rm ${source_code}
+for file in $source_code; do
+  if [ -f $file ]; then
+    rm ${source_code}
+  fi
+done
+
 cd ..
 zip -r ../../autograder .
 cd ../tools/source/ || return
