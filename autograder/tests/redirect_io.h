@@ -143,7 +143,7 @@ void execute_test(const string& file_name, VoidFunction func) {
     else if (output_test.empty()) {
         REQUIRE (!"ERROR READING OUTPUT TEST");
     }
-    else if(output_test.empty() && result.empty()) {
+    else if(result.empty()) {
         REQUIRE (!"ERROR READING TEST:");
     }
 
