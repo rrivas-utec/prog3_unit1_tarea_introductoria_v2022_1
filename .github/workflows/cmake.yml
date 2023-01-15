@@ -53,8 +53,6 @@ jobs:
       working-directory: ${{github.workspace}}/autograder/tests/cppcheck
       run: |
           cp ../../../src/matrix.* ..
-          ls -al
-          ls .. -al
           chmod +x run_test
           ./run_test
 
