@@ -4,9 +4,10 @@
 #  for example: cppcheck ../student_file.h <options>
 
 # src code references
-source='cppcheck.cpp
-  ../redirect_io.h 
+source='
   ../matrix.h ../matrix.cpp
+  ../redirect_io.h
+  cppcheck.cpp
   '
 
 cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt --check-config
