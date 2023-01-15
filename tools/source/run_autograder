@@ -104,7 +104,9 @@ def run_tests(pending_messages):
     suite = unittest.TestSuite()
 
     #  go through all directories in /tests
-    for dr in get_test_dirs():
+    dirs = get_test_dirs()
+    dirs.sort()
+    for dr in dirs:
         LOGGER.info('Test directory discovered: {}'.format(dr))
         if not gu.file_exists(os.path.join(gu.Config.TEST_DIR, dr, 'run_test')):
             LOGGER.error('Test improperly configured: missing \'run_test\' executable')
