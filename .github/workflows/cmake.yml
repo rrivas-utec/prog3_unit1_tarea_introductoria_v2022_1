@@ -60,5 +60,5 @@ jobs:
 
     - name: Valgrind Test
       working-directory: ${{github.workspace}}/build/autograder
-      run: valgrind --tool=memcheck --leak-check=yes --xtree-memory=full ./prog3_unit1_tarea_introductoria_v2022_1_test/src
+      run: valgrind --tool=memcheck --leak-check=yes --xtree-memory=full ./prog3_unit1_tarea_introductoria_v2022_1_test
 
