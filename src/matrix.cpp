@@ -46,7 +46,7 @@ utec::matrix &utec::matrix::operator=(utec::matrix &&other) noexcept {
 }
 
 utec::matrix::~matrix() {
-//    delete [] data;
+    delete [] data;
 }
 
 TYPE& utec::matrix::operator() (SIZE_TYPE row, SIZE_TYPE col) {
