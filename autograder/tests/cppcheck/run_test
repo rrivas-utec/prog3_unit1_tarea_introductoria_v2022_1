@@ -10,5 +10,5 @@ source='
   ../redirect_io.h
   '
 
-cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt
+cppcheck ${source} -x c++ --enable=all --suppressions-list=suppressions.txt
 # --check-config
