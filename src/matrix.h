@@ -14,18 +14,18 @@ namespace utec {
         SIZE_TYPE n_rows = 0;
         SIZE_TYPE n_cols = 0;
     public:
-        explicit matrix(SIZE_TYPE n_rows, SIZE_TYPE n_cols);
-        matrix(const matrix& another);
-        matrix& operator=(const matrix& another);
-        matrix(matrix&& another) noexcept;
-        matrix& operator=(matrix&& another) noexcept;
+        explicit matrix(SIZE_TYPE rows, SIZE_TYPE cols);
+        matrix(const matrix& other);
+        matrix& operator=(const matrix& other);
+        matrix(matrix&& other) noexcept;
+        matrix& operator=(matrix&& other) noexcept;
         ~matrix();
         TYPE& operator () (SIZE_TYPE row, SIZE_TYPE col);
         TYPE operator () (SIZE_TYPE row, SIZE_TYPE col) const;
         [[nodiscard]] SIZE_TYPE rows() const;
         [[nodiscard]] SIZE_TYPE cols() const;
-        matrix operator + (const matrix& other);
-        matrix operator * (const matrix& other);
+        matrix operator + (const matrix& other) const;
+        matrix operator * (const matrix& other) const;
         matrix operator *= (TYPE scalar);
         bool operator == (const matrix& other) const;
         bool operator != (const matrix& other);

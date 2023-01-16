@@ -64,7 +64,7 @@ std::ostream& utec::operator<<(std::ostream &os, const utec::matrix &m) {
     return os;
 }
 
-utec::matrix utec::matrix::operator+(const utec::matrix &other) {
+utec::matrix utec::matrix::operator+(const utec::matrix &other) const {
     if (n_rows != other.n_rows || n_cols != other.n_cols)
         throw std::runtime_error(
                 "number of rows and columns does not match");
@@ -75,7 +75,7 @@ utec::matrix utec::matrix::operator+(const utec::matrix &other) {
     return result;
 }
 
-utec::matrix utec::matrix::operator*(const utec::matrix &other) {
+utec::matrix utec::matrix::operator*(const utec::matrix &other) const {
     if (n_cols != other.n_rows)
         throw std::runtime_error(
                 "number of columns of first matrix does not match with rows of second matrix");
