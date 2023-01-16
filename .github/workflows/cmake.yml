@@ -50,12 +50,11 @@ jobs:
       run: ./prog3_unit1_tarea_introductoria_v2022_1_test
 
     - name: CppCheck Test
-      #          cp ../../../src/matrix.* ..
-      working-directory: ${{github.workspace}}/build/autograder
-      #      working-directory: ${{github.workspace}}/autograder/tests/cppcheck
+      working-directory: ${{github.workspace}}/autograder/tests/cppcheck
       run: |
-          chmod +x ../../autograder/tests/cppcheck/run_test
-        ../../autograder/tests/cppcheck/run_test
+          cp ../../../src/matrix.* ..
+          chmod +x run_test
+          ./run_test
 
     - name: Valgrind Test
       working-directory: ${{github.workspace}}/build/autograder
