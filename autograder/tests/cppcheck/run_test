@@ -9,4 +9,4 @@ source='
   ../matrix.cpp
   '
 
-cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt
+cppcheck ${source} -x c++ --enable=all --error-exitcode=1 --verbose --suppressions-list=suppressions.txt
