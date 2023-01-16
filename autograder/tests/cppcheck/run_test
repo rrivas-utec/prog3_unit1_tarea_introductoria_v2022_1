@@ -5,6 +5,7 @@
 
 # src code references
 source='
+  cppcheck.cpp
   ../matrix.h
   ../matrix.cpp
   '
