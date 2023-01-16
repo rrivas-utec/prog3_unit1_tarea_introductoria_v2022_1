@@ -1,3 +1,4 @@
+#include "../redirect_io.h"
 #include "../matrix.h"
 #include <iostream>
 #include <algorithm>
