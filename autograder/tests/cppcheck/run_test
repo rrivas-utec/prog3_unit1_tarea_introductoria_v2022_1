@@ -10,5 +10,4 @@ source='
   ../redirect_io.h
   '
 
-cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt
-# --check-config
+cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt --check-config
