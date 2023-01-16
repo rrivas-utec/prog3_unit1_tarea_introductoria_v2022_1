@@ -54,8 +54,8 @@ jobs:
       working-directory: ${{github.workspace}}/build/autograder
       #      working-directory: ${{github.workspace}}/autograder/tests/cppcheck
       run: |
-          chmod +x run_test
-          ./run_test
+          chmod +x ../../autograder/tests/cppcheck/run_test
+        ../../autograder/tests/cppcheck/run_test
 
     - name: Valgrind Test
       working-directory: ${{github.workspace}}/build/autograder
