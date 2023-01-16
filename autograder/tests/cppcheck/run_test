@@ -7,6 +7,7 @@
 source='
   cppcheck.cpp
   ../matrix.h ../matrix.cpp
+  ../redirect_io.h
   '
 
 cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt
