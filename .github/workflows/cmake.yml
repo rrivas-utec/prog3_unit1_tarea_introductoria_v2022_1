@@ -49,8 +49,8 @@ jobs:
       working-directory: ${{github.workspace}}/build/autograder
       run: ./prog3_unit1_tarea_introductoria_v2022_1_test
 
-      #          cp ../../../src/matrix.* ..
     - name: CppCheck Test
+      #          cp ../../../src/matrix.* ..
       working-directory: ${{github.workspace}}/build/autograder
       #      working-directory: ${{github.workspace}}/autograder/tests/cppcheck
       run: |
