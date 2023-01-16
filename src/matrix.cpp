@@ -91,7 +91,7 @@ utec::matrix utec::matrix::operator*(const utec::matrix &other) const {
     return result;
 }
 
-utec::matrix utec::matrix::operator*=(TYPE scalar) {
+utec::matrix utec::matrix::operator*=(TYPE scalar) const {
     for (auto it = data; it != data + n_rows*n_cols; ++it)
         *it *= scalar;
     return *this;

@@ -26,7 +26,7 @@ namespace utec {
         [[nodiscard]] SIZE_TYPE cols() const;
         matrix operator + (const matrix& other) const;
         matrix operator * (const matrix& other) const;
-        matrix operator *= (TYPE scalar);
+        matrix operator *= (TYPE scalar) const;
         bool operator == (const matrix& other) const;
         bool operator != (const matrix& other);
         friend std::ostream& operator << (std::ostream& os, const matrix& m);
