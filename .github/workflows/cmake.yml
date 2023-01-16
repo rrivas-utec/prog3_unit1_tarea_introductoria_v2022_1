@@ -50,7 +50,8 @@ jobs:
       run: ./prog3_unit1_tarea_introductoria_v2022_1_test
 
     - name: CppCheck Test
-      working-directory: ${{github.workspace}}/autograder/tests/cppcheck
+      working-directory: ${{github.workspace}}/build/autograder
+      #      working-directory: ${{github.workspace}}/autograder/tests/cppcheck
       run: |
           cp ../../../src/matrix.* ..
           chmod +x run_test
