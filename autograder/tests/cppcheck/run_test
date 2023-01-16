@@ -6,6 +6,7 @@
 # src code references
 source='
   ../matrix.h
+  ../matrix.cpp
   '
 
-cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt --check-config
+cppcheck ${source} -x c++ --enable=all --verbose --suppressions-list=suppressions.txt
